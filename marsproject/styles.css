@@ -1,0 +1,332 @@
+html, body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'newFont';
+}
+
+@font-face {
+    font-family: 'newFont';
+    src: url(RedditSans-VariableFont_wght.ttf);
+  }
+
+.grid-container {
+    display: grid;
+    width: 100%;
+    height: auto;
+}
+
+.header {
+    text-align: center;
+    padding: 1rem;
+    margin: 0;
+    padding: 0;
+    background-color: #202020;
+}
+
+#title {
+    margin: auto;
+    margin-right: 5%;
+}
+
+.box1 img {
+    padding-top: 20px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2500 / 1409;
+}
+
+.footer {
+    text-align: left;
+    padding: 1rem;
+    margin: 0;
+    padding-top: 20px;
+    background-color: #202020;
+}
+
+.footer a{
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.footer a:hover{
+    font-size: 30px;
+}
+
+.footer ul, li{
+    font-size: 20px;
+    color: white;
+    list-style: none;
+    padding-left: 10px;
+}
+
+.footer h1, h2{
+    color: white;
+    padding: 5px 50px;
+    padding-bottom: 1px;
+    font-size: 18px;
+}
+
+.text-table-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    padding-bottom: 30px;
+}
+
+.paragraph-section {
+    padding-right: 5%;
+    padding-left: 5%;
+    font-size: larger;
+    align-content: center;
+    color:blanchedalmond;
+    width: 66.67%;
+    line-height: 145%;
+}
+
+.table-section {
+    padding-left: 5%;
+    padding-right: 5%;
+    align-content: center;
+    width: 33.33%; 
+    color: blanchedalmond;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid blanchedalmond;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+@media (max-width: 600px) {
+    .text-table-container{
+        flex-direction: column;
+    }
+
+    .paragraph-section, .table-section {
+        width: 100%;
+    }
+}
+
+.toggle-bar {
+    font-size: 35px;
+    padding: 10px 20px;
+    padding-bottom: 30px;
+    color: white;
+    text-align: left;
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    padding: 8px;
+    text-align: left;
+    display: none;
+    width: 100%;
+}
+
+.menu-left, .menu-right {
+    flex: 1;
+    padding: 10px;
+}
+
+.menu-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12px;
+}
+
+.menu a:link {
+    font-size: 18px;
+    display: block;
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    font-size: 25px;;
+}
+
+.menu a:visited {
+    color:green;
+}
+
+.menu img {
+    max-width: 60%;
+    height: auto;
+    display: block;
+}
+
+@media (prefers-color-scheme: light) {
+    body a, p, h1, table {
+        color: white;
+    }
+}
+
+.full-width {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: auto;
+    flex-direction: row;
+    padding-bottom: 30px;
+    padding-left: 0%;
+    background-color: black;
+    
+}
+
+#box3 {
+    height: 10vh;
+    color: white;
+    padding-top: 10px;
+}
+
+#box3 .arrow {
+    width: 20%;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#box3 .flag {
+    margin-left: 5px;
+    padding-left: 5%;
+    width: 10%;
+}
+
+#box3 .rover-name {
+    display: flex;
+    width: 70%;
+    text-align:center;
+    font-size: 40px;
+    padding-left: 2%;
+}
+
+#box4 {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    min-height: 70vh;
+    color: blanchedalmond;
+}
+
+#box4 .image-section {
+    width: 50%;
+    padding: 3%;
+}
+
+#box4 .image-section img {
+    width: 100%;
+    height: auto;
+}
+
+#box4 .text-section {
+    padding: 3%;
+    width: 50%;
+    padding: 5%;
+    line-height: 150%;
+    font-size: 22px;
+}
+
+#box4 h1 {
+    text-align: left;
+    font-size: 30px;
+}
+
+@media (max-width: 600px) {
+    .full-width, #box3, #box4 {
+        flex-direction: column;
+    }
+
+    #box3 .arrow, #box3 .flag, #box3 .rover-name {
+        width: auto;
+    }
+
+    #box3{
+        padding-bottom: 13%;
+    }
+
+    #box4 .image-section, #box4 .text-section {
+        width: 100%;
+    }
+}
+
+#box5 {
+    height: 10vh;
+    color: white;
+    padding-top: 10px;
+}
+
+#box5 .arrow {
+    width: 20%;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#box5 .moon-name {
+    width: 60%;
+    text-align: center;
+    font-size: 40px;
+}
+
+#box6 {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    min-height: 70vh;
+    color: blanchedalmond;
+}
+
+#box6 .image-section {
+    width: 50%;
+    padding: 3%;
+}
+
+#box6 .image-section img {
+    width: 100%;
+    height: auto;
+}
+
+#box6 .text-section {
+    padding: 3%;
+    width: 50%;
+    padding: 5%;
+    line-height: 150%;
+    font-size: 22px;
+}
+
+@media (max-width: 600px) {
+    .full-width, #box5, #box6 {
+        flex-direction: column;
+    }
+
+    #box5 .arrow, #box5 .moon-name {
+        width: auto;
+    }
+
+    #box5{
+        padding-bottom: 13%;
+    }
+
+    #box6 .image-section, #box6 .text-section {
+        width: 100%;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}

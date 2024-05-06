@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorations</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
+  </head>
+
+  <body>
+    <script src="styles.js"></script>
+
+    <div class="grid-container">
+      <div class="header">
+        <div class="toggle-bar" onclick="toggleMenu()">Explore ▾</div>
+        <div class="menu" id="menu">
+            <div class="menu-left">
+                <a href="index.html" onmouseover="changeImage('images/RedPlanet.webp')">The Red Planet</a>
+                <a href="page3.html" onmouseover="changeImage('images/moons.jpeg')">Moons of Mars</a>
+            </div>
+            <div class="menu-right">
+                <img id="menu-image" src="images/202020.png" width="60%" height="30%" alt="Menu Image">
+            </div>
+        </div>
+        <script src="script.js"></script>
+
+        <div id="box3" class="full-width">
+            <div class="arrow left-arrow" onclick="changeRover(-1)"> ◀</div>
+            <div class="flag"><img id="rover-flag" src="images/USA.webp" alt="Flag"></div>
+            <div class="rover-name" id="rover-name">Opportunity</div>
+            <div class="arrow right-arrow" onclick="changeRover(1)">▶</div>
+        </div>
+        <div id="box4" class="full-width">
+            <div class="image-section">
+                <img id="rover-image" src="images/Oppor.webp" alt="Rover Image">
+            </div>
+            <div class="text-section" id="rover-text">
+                <h1>Meridiani Planum, January 25, 2004</h1>
+                NASA's Opportunity rover, part of the Mars Exploration Rover mission, was a remarkable robotic geologist that landed on the Red Planet on January 25, 2004. Initially intended for a 90-day mission, Opportunity far exceeded expectations, exploring the Martian surface for nearly 15 years before concluding its journey in June 2018. Opportunity landed in the Meridiani Planum region, where it made groundbreaking discoveries, including evidence of past water activity that suggested Mars could have supported microbial life. The rover was equipped with a panoramic camera, a microscopic imager, and spectrometers to analyze the composition of Martian rocks and soil. Its legacy includes completing the first marathon on another planet, a testament to its endurance and the success of its mission.
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <a href="https://i6.cims.nyu.edu/~hs4801/">◂ Go to Home Page</a>
+
+        <h2>Images courtesy of:</h2>
+        <ul>
+            <li>◂<a href="https://www.nasa.gov" target="_blank">www.nasa.gov</a></li>
+            <li>◂<a href="http://www.cnsa.gov.cn" target="_blank">www.cnsa.gov.cn</a></li>
+        </ul>
+    </div>
+  </body>
+</html>

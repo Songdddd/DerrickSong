@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moons</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
+  </head>
+
+  <body>
+    <script src="styles.js"></script>
+
+    <div class="grid-container">
+      <div class="header">
+        <div class="toggle-bar" onclick="toggleMenu()">Explore ▾</div>
+        <div class="menu" id="menu">
+            <div class="menu-left">
+                <a href="index.html" onmouseover="changeImage('images/RedPlanet.webp')">The Red Planet</a>
+                <a href="page2.html" onmouseover="changeImage('images/moons.jpeg')">Explorations</a>
+            </div>
+            <div class="menu-right">
+                <img id="menu-image" src="images/202020.png" width="60%" height="30%" alt="Menu Image">
+            </div>
+        </div>
+        <script src="script.js"></script>
+
+        <div id="box5" class="full-width">
+            <div class="arrow left-arrow" onclick="changeMoon(-1)">◀</div>
+            <div class="moon-name" id="moon-name">The Mars System</div>
+            <div class="arrow right-arrow" onclick="changeMoon(1)">▶</div>
+        </div>
+        <div id="box6" class="full-width">
+            <div class="image-section">
+                <img id="moon-image" src="images/mars-moons.jpg" alt="Moon Image">
+            </div>
+            <div class="text-section" id="moon-text">
+                Mars, the fourth planet from the Sun, has long captured human imagination and scientific interest. Among its most fascinating features are its two moons, Phobos and Deimos. Unlike the Earth's moon, which is a large and stabilizing presence, Mars' moons are small and irregularly shaped, suggesting they may be captured asteroids. Phobos, the larger and closer of the two, orbits Mars so closely that it rises and sets twice within a single Martian day. Deimos, smaller and further away, takes a more leisurely path around the planet. These moons are more than mere celestial bodies; they are windows into the Martian past, providing clues about the planet’s formation and the dynamic processes that have shaped the solar system. Understanding these moons is not only critical for comprehending Mars' history but also for future missions, as they could serve as bases for exploring Mars and beyond.
+            </div>
+        </div>
+      </div>
+    <div class="footer">
+        <a href="https://i6.cims.nyu.edu/~hs4801/">◂ Go to Home Page</a>
+
+        <h1>Images courtesy of:</h1>
+        <ul>
+            <li>◂<a href="https://www.nasa.gov" target="_blank">www.nasa.gov</a></li>
+            <li>◂<a href="http://www.cnsa.gov.cn" target="_blank">www.cnsa.gov.cn</a></li>
+        </ul>
+    </div>
+  </body>
+</html>
